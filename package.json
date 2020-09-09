@@ -11,10 +11,9 @@
       "standart"
     ]
   },
-
-  "husky":{
-    "hooks":{
-      "pre-commit": "lint-staged"
+  "husky": {
+    "hooks": {
+      "pre-comit": "lint-staged"
     }
   },
   "author": "",
