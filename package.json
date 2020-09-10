@@ -4,17 +4,23 @@
   "description": "Programação para Intenrnet IV",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "lint-staged": {
     "*.js": [
-      "standart"
+      "standart --fix",
+      "git add"
     ]
   },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }
+  },
+  "standart": {
+    "env": [
+      "jest"
+    ]
   },
   "author": "",
   "license": "ISC",
